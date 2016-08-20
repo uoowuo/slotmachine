@@ -25,7 +25,7 @@ class Slotmachine {
         this.symbolWidth = 216;
         this.symbolHeight = 144;
         this.symbolsShown = 3;
-        this.reelTemplate = ['e', 'e', 'e', 'g', 'g', 'g', 'h', 'n', 'n', 'o', 'o', 's', 's', 's', 'u', 'u', 'u'];
+        this.reelTemplate = ['e', 'e', 'e', 'g', 'g', 'g', 'h', 'h', 'h', 'n', 'n', 'n', 'o', 'o', 'o', 's', 's', 's', 'u', 'u', 'u'];
         this.reelCount = reelCount;
         this.reelWidth = this.symbolWidth;
         this.reelHeight = this.symbolHeight * this.symbolsShown;
