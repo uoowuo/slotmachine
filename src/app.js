@@ -1,5 +1,5 @@
 /**
- * Slotmachine, v1.1.0
+ * Slotmachine, v1.1.1
  *
  * Description: A simple slot machine.
  */
