@@ -25,7 +25,7 @@ class Slotmachine {
         this.symbolWidth = 216;
         this.symbolHeight = 144;
         this.symbolsShown = 3;
-        this.reelTemplate = ['a', 'a', 'a', 'a', 'b', 'b', 'b', 'b', 'c', 'c', 'c', 'c', 'd', 'd', 'd', 'd', 'e', 'e', 'e', 'e'];
+        this.reelTemplate = ['e', 'e', 'e', 'e',  'e', 'e',  'g', 'g', 'g', 'g', 'g', 's', 's', 's', 'o', 'o', 'u', 'u', 'n', 'n', 'n', 'n', 'n', 'n', 'h'];
         this.reelCount = reelCount;
         this.reelWidth = this.symbolWidth;
         this.reelHeight = this.symbolHeight * this.symbolsShown;
@@ -33,11 +33,13 @@ class Slotmachine {
         // Setup asset loader
         const preload = () => {
             this1.assets = this1.loadAssets([
-                './images/symbolA.png',
-                './images/symbolB.png',
-                './images/symbolC.png',
-                './images/symbolD.png',
-                './images/symbolE.png'
+                './images/symbolE.png',
+                './images/symbolG.png',
+                './images/symbolH.png',
+                './images/symbolN.png',
+                './images/symbolO.png',
+                './images/symbolS.png',
+                './images/symbolU.png'
             ], 'spritesheet', 216, 144);
         };
 
@@ -103,7 +105,7 @@ class Slotmachine {
                     if (isWinner) {
                         console.log('You may have won a million dollars!');
                         currentSymbols.forEach((symbol) => {
-                            symbol.gameObject.animations.add('pulsate').play(6);
+                            symbol.gameObject.animations.add('pulsate').play(6, true);  // Play winning animation
                         })
                     } else {
                         console.log('meh.');
@@ -119,7 +121,7 @@ class Slotmachine {
             reel.symbols.forEach((symbol) => {
 
                 // Remove previous animations if any
-                symbol.gameObject.animations.stop();
+                symbol.gameObject.animations.stop(null, true);
 
                 var stepNum = 0;
 
