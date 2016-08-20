@@ -32,13 +32,13 @@ class Slotmachine {
         this.winningMatches = [
 
             // Words and acronyms
-            'eon', 'err', 'nee', 'nor', 'nun', 'one', 'ore', 'our', 'roe', 'rue', 'run', 'see', 'son',
+            'eon', 'err', 'nee', 'nor', 'nun', 'one', 'ore', 'our', 'roe', 'rue', 'run', 'see', 'son', 'uss',
             'sos', 'sue', 'sun', 'urn', 'use', 'usr', 'ron', 'seo', 'uno', 'eur', 'ros', 'rus', 'sor', 'nes',
             'noo', 'nou', 'soo', 'neo', 'rss', 'ssn', 'eos', 'oss', 'snu', 'ero', 'eru', 'suo', 'sur', 'nos', 'orr', 'res',
-            'roo', 'esr', 'srs', 'usn', 'unn', 'rur', 'sen', 'rse', 'ren', 'sno', 'sse', 'neu', 'sou',
+            'roo', 'esr', 'srs', 'usn', 'unn', 'rur', 'sen', 'ren', 'sno', 'sse', 'neu', 'sou', 'oun', 'urs', 'uro', 'nuo',
 
-            // Words with [heart] working as 'o' or other letter
-            'hne', 'shn', 'shs', 'rhn', 'seh', 'shr', 'rhs', 'ush', 'neh', 'hss', 'enh', 'hur', 'nsh', 'ssh',
+            // Words with [heart] working as 'o' or other letters
+            'hne', 'shn', 'shs', 'rhn', 'seh', 'shr', 'rhs', 'ush', 'neh', 'hss', 'enh', 'hur', 'nsh', 'ssh', 'eho',
 
             // Words with heart as a delimiter
             'nho', 'sho',
@@ -52,6 +52,10 @@ class Slotmachine {
             'oou', 'uoo',
             'ere', 'ene',
             'ooh', 'hoo',
+            'oor', 'roo',
+            'eoo', 'ooe',
+            'ueu',
+            'oos', 'soo',
             // [Heart] as word/notion of love and similar
             'hhu', 'uhh', 'hon', 'roh', 'noh', 'urh', 'hen', 'hes', 'hne', 'hno', 'hos',
             'hso', 'hus', 'heu', 'orh', 'soh', 'hor'
